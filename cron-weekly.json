@@ -1,5 +1,5 @@
 {
-  "name": "Weekly Memory Compound (Sunday 10 PM)",
+  "name": "Weekly Genius Compound (Sunday 10 PM)",
   "schedule": {
     "kind": "cron",
     "expr": "0 22 * * 0",
@@ -7,8 +7,8 @@
   },
   "payload": {
     "kind": "agentTurn",
-    "message": "WEEKLY MEMORY COMPOUND — read all memory/YYYY-MM-DD.md files from this week, update MEMORY.md with new preferences, decision patterns, project status changes, prune stale info, then run: openclaw memory index",
-    "model": "openai-compat/claude-sonnet-4-5-20250514"
+    "message": "WEEKLY GENIUS COMPOUND — 读取本周所有 memory/YYYY-MM-DD.md：1) 矛盾检测（列出所有冲突观点并解决）2) 因果链提取（生成 5-10 条「因为...所以...」）3) 模式发现（提炼 8-15 条可复用的洞见）4) 关系图谱更新（在 RELATIONSHIPS.md 里用 Markdown 表格维护实体关系）5) 重要性评分（每条记忆打 0-100 分，低分自动压缩）6) 写入 MEMORY.md（精华部分）和 INSIGHTS.md（深度思考）7) 生成「本周我学到的 3 个最大教训」8) 最后运行：openclaw memory index",
+    "model": "anthropic/claude-sonnet-4-5"
   },
   "sessionTarget": "isolated",
   "enabled": true

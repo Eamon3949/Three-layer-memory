@@ -1,0 +1,16 @@
+{
+  "name": "Hourly Micro-Sync",
+  "schedule": {
+    "kind": "cron",
+    "expr": "0 9,11,13,15,17,19,21,23 * * *",
+    "tz": "Asia/Shanghai"
+  },
+  "payload": {
+    "kind": "agentTurn",
+    "message": "MICRO-SYNC — check if meaningful activity happened in last 3 hours via sessions_list. If yes, append a brief summary note to today's memory/YYYY-MM-DD.md and run: openclaw memory index. If nothing notable, do nothing silently.",
+    "model": "openai-compat/claude-sonnet-4-5-20250514"
+  },
+  "sessionTarget": "isolated",
+  "delivery": {"mode": "none"},
+  "enabled": true
+}

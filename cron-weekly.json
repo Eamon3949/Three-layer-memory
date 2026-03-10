@@ -1,0 +1,15 @@
+{
+  "name": "Weekly Memory Compound (Sunday 10 PM)",
+  "schedule": {
+    "kind": "cron",
+    "expr": "0 22 * * 0",
+    "tz": "Asia/Shanghai"
+  },
+  "payload": {
+    "kind": "agentTurn",
+    "message": "WEEKLY MEMORY COMPOUND — read all memory/YYYY-MM-DD.md files from this week, update MEMORY.md with new preferences, decision patterns, project status changes, prune stale info, then run: openclaw memory index",
+    "model": "openai-compat/claude-sonnet-4-5-20250514"
+  },
+  "sessionTarget": "isolated",
+  "enabled": true
+}

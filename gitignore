@@ -1,0 +1,9 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# V3 系统生成的本地数据库和图像（绝对不能上传）
+chroma_db_storage/
+l3_knowledge_graph.gml
+agent_brain_map.png
